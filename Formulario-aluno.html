@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Cadastro Aluno</h1>
+    <form action="#" method="get">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" />
+
+      <br />
+      <br />
+
+      <label for="idade">Idade:</label>
+      <input type="number" name="idade" id="idade" min="16" max="60" />
+
+      <br />
+      <br />
+
+      <label for="imgPerfil">Enviar arquivo:</label>
+      <input type="file" name="imgPerfil" id="imgPerfil" />
+
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" />
+
+      <br />
+      <br />
+
+      <label for="password">Senha:</label>
+      <input type="password" name="password" id="password" />
+
+      <br />
+      <br />
+
+      <label for="aniversario">Data de Nacismento:</label>
+      <input type="date" id="aniversario" name="aniversario" max="2012-12-31" />
+
+      <br />
+      <br />
+
+      <label for="phone">Telefone:</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        minlength="11"
+        maxlength="15"
+        placeholder="(xx) xxxxx-xxxx"
+      />
+      <br />
+      <br />
+
+      <label for="genero">Gênero:</label>
+
+      <input
+        type="radio"
+        name="genero"
+        id="masculino"
+        value="masculino"
+        required
+      />
+      <label for="masculino">Masculino</label>
+      <input
+        type="radio"
+        name="genero"
+        id="feminino"
+        value="feminino"
+        required
+      />
+      <label for="Feminino">Feminino</label>
+      <br />
+      <br />
+      <label for="estado">Estado:</label>
+      <select name="estado" id="estado">
+        <option value="Selecione">Selecione</option>
+        <option value="Sao Paulo">São Paulo</option>
+        <option value="Rio de Janeiro">Rio De Janeiro</option>
+        <option value="Minas Gerais">Minas Gerais</option>
+        <option value="Tocantins">Tocantins</option>
+      </select>
+      <br />
+      <br />
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem"></textarea>
+
+      <br />
+      <br />
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
